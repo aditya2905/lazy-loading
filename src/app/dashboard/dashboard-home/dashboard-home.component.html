@@ -1,0 +1,11 @@
+<h3>Article Details</h3>
+<div class="row">
+<form id="filter">
+	<label>Filter Ninjas by name:</label>
+	<input type="text" name="term" [(ngModel)]="term"/>
+</form>
+  <div class="column" *ngFor = "let ninja of ninjas">
+    <p>{{ninja.area}}</p>
+	<p>{{ninja.name}}</p>
+  </div>  
+</div>
